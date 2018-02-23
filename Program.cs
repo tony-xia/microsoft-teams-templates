@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace microsoft_teams_templates
+namespace MicrosoftTeams.Templates
 {
     public class Program
     {

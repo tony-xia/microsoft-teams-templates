@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace microsoft_teams_templates
+namespace MicrosoftTeams.Templates
 {
     public class Startup
     {
