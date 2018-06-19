@@ -1,16 +1,19 @@
 ﻿using System;
+using Microsoft.Bot.Schema;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MicrosoftTeams.Templates.Controllers
 {
     public class MessagesController : Controller
     {
-        // GET api/values
         [HttpPost]
         [Route("api/messages")]
-        public IActionResult ReplyMessage()
+        public Activity ReplyMessage([FromBody]Activity message)
         {
-            return Ok("{\"text\":\"reply message\"}");
+            return new Activity()
+            {
+                Text = "echo: " + message.Text
+            };
         }
 
     }
