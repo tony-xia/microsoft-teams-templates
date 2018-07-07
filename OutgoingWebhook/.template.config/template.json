@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Tony Xia",
-  "classifications": [ "Teams", "WebAPI" ],
+  "classifications": [ "Teams", "Webhook", "WebAPI" ],
   "identity": "MicrosoftTeams.OutgoingWebhook",
   "name": "Microsoft Teams Outgoing Webhook Application",
   "shortName": "teamswebhook"
