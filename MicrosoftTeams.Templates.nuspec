@@ -2,11 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>MicrosoftTeams.Templates</id>
-    <version>1.0.0</version>
+    <version>0.9.1</version>
     <description>
       Creates Microsoft Teams apps.
     </description>
+    <tags>Microsoft Teams Template</tags>
     <authors>Tony Xia</authors>
+    <language>en-US</language>
+    <projectUrl>https://github.com/tony-xia/microsoft-teams-templates</projectUrl>
+    <iconUrl>https://c.s-microsoft.com/en-au/CMSImages/Icon_MicrosoftTeamsTile_85x85.jpg?version=107e4762-aeef-86ae-9f77-c931d9a0ac8c</iconUrl>
     <packageTypes>
       <packageType name="Template" />
     </packageTypes>

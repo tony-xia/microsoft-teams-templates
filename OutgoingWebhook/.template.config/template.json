@@ -4,5 +4,9 @@
   "classifications": [ "Teams", "Webhook", "WebAPI" ],
   "identity": "MicrosoftTeams.OutgoingWebhook",
   "name": "Microsoft Teams Outgoing Webhook Application",
-  "shortName": "teamswebhook"
+  "shortName": "teamswebhook",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  }
 }
