@@ -74,7 +74,7 @@ namespace MicrosoftTeams.OutgoingWebhook.Controllers
                 {
                     new CardImage()
                     {
-                        Url = "https://docs.microsoft.com/en-us/MicrosoftTeams/media/overview_of_a_microsoft_teams_deployment_image1.png"
+                        Url = "https://github.com/tony-xia/microsoft-teams-templates/raw/master/SampleImages/cbd_after_sunset.jpg"
                     }
                 },
                 Buttons = new List<CardAction>()
@@ -99,7 +99,7 @@ namespace MicrosoftTeams.OutgoingWebhook.Controllers
                 {
                     new CardImage()
                     {
-                        Url = "https://avatars0.githubusercontent.com/u/11069971?s=460&v=4"
+                        Url = "https://github.com/tony-xia/microsoft-teams-templates/raw/master/SampleImages/steak.jpg"
                     }
                 },
                 Buttons = new List<CardAction>()
