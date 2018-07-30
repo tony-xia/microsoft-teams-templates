@@ -16,7 +16,7 @@
 * 复制ngrok中的地址.
 ![ngrok](docs/assets/readme_en_us/ngrok.png)
 * 打开Microsoft Teams, 创建一个传出的webhook.  输入应用名称和应用的描述。粘贴ngrok中的url到回调Url框中。还应该加上 `api/message` 到你的回调地址中, 这个才是一个完整的终结点地址处理来自Microsoft Teams的请求。
-![CreateAnOutgoingwebhook](docs/assets/readme_zh_cn/CreateAnOutgoingwebhook.png)
+![CreateAnOutgoingwebhook](docs/assets/readme_zh_cn/CreateAnOutgoingwebhook.jpg)
 * 点击 "创建" 按钮. 复制和保存安全令牌，留着后面备用.
 ![SecurityToken](docs/assets/readme_zh_cn/SecurityToken.jpeg)
 * 运行命令 `dotnet new teamswebhook --name SampleApp` 来生成项目。
