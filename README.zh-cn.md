@@ -1,27 +1,27 @@
 # Microsoft Teams Templates
 
-## Prerequisites
+## 先决条件
 
-* [dotnet SDK 2.1.0](https://www.microsoft.com/net/core) together with dotnet CLI
+* [dotnet SDK 2.1.0](https://www.microsoft.com/net/core) 和dotnet CLI
 
-## Using the template
+## 使用模板
 
-* Install or update the template: `dotnet new -i MicrosoftTeams.Templates`
-* Create a new project from the template: `dotnet new teamswebhook --name your-project-name`
+* 安装或者更新模板: `dotnet new -i MicrosoftTeams.Templates`
+* 根据模板创建一个新项目: `dotnet new teamswebhook --name your-project-name`
 
-## Developing and debugging an outgoing web hook locally
+## 开发和调试一个本地传出的web hook
 
-* Install ngrok from [https://ngrok.com/](https://ngrok.com/)
-* Run `ngrok.exe http 5000`, because our web api project will listen on port 5000.
-* Copy the ngrok url.
+* 安装ngrok，官网地址： [https://ngrok.com/](https://ngrok.com/)
+* 运行 `ngrok.exe http 5000`, 因为我们本地的web api项目将会监听5000端口.
+* 复制ngrok中的地址.
 ![ngrok](docs/assets/readme_en_us/ngrok.png)
-* Open Microsoft Teams, create an Outgoing webhook. Input the app name and app description. Paste the ngrok url into "Callback URL" field. You need to append the `api/message` to your url, because this is the endpoint which handles the requests from Microsoft Teams.
+* 打开Microsoft Teams, 创建一个传出的webhook.  输入应用名称和应用的描述。粘贴ngrok中的url到回调Url框中。还应该加上 `api/message` 到你的回调地址中, 这个才是一个完整的终结点地址处理来自Microsoft Teams的请求。
 ![CreateAnOutgoingwebhook](docs/assets/readme_zh_cn/CreateAnOutgoingwebhook.png)
-* Click "Create" button. Copy and save the security token for future use.
+* 点击 "创建" 按钮. 复制和保存安全令牌，留着后面备用.
 ![SecurityToken](docs/assets/readme_zh_cn/SecurityToken.jpeg)
-* Run `dotnet new teamswebhook --name SampleApp` to generate the project.
-* Open `SampleApp/appsettings.json` file, replace `[Teams app security token]` with the real security token you just saved.
+* 运行命令 `dotnet new teamswebhook --name SampleApp` 来生成项目。
+* 打开 `SampleApp/appsettings.json` 文件, 用刚刚复制保存的安全令牌替换这里的 `[Teams app security token]`。
 ![appsettings](docs/assets/readme_en_us/appsettings.png)
-* Start the project by running `dotnet run`.
-* All done, you can switch to Microsoft Teams, @ the bot name, your sample project will send the meesage back to you.
+* 输入命令 `dotnet run` 运行项目。
+* 以上全部完成, 切换到中Microsoft Teams, @机器人应用的名称, 你的应用将会受到请求，响应信息回来.
 ![chat](docs/assets/readme_zh_cn/chat.png)
