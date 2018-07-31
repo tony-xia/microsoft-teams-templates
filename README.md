@@ -16,7 +16,7 @@
 * Copy the ngrok url.
 ![ngrok](docs/assets/readme_en_us/ngrok.png)
 * Open Microsoft Teams, create an Outgoing webhook. Input the app name and app description. Paste the ngrok url into "Callback URL" field. You need to append the `api/message` to your url, because this is the endpoint which handles the requests from Microsoft Teams.
-![CreateAnOutgoingwebhook](docs/assets/readme_en_us/CreateAnOutgoingwebhook.png)
+![CreateAnOutgoingwebhook](docs/assets/readme_en_us/CreateAnOutgoingWebhook.png)
 * Click "Create" button. Copy and save the security token for future use.
 ![SecurityToken](docs/assets/readme_en_us/SecurityToken.png)
 * Run `dotnet new teamswebhook --name SampleApp` to generate the project.
