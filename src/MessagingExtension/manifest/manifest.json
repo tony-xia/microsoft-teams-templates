@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.3/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.3",
+  "version": "1.0",
+  "id": "<<REGISTERED_BOT_ID. Register your bot at https://dev.botframework.com/bots/new>>",
+  "packageName": "com.microsoft.teams.yourprojectname",
+  "developer": {
+      "name": "YourName",
+      "websiteUrl": "http://www.yourwebsite.com",
+      "privacyUrl": "https://privacy.yourwebsite.com",
+      "termsOfUseUrl": "https://terms.yourwebsite.com"
+  },
+  "icons": {
+      "color": "color.png",
+      "outline": "outline.png"
+  },
+  "name": {
+      "short": "SampleMessagingExtension",
+      "full": "The full name of this messaging extension"
+  },
+  "description": {
+      "short": "The short description",
+      "full": "The full description for this messaging extension"
+  },
+  "accentColor": "#FFFFFF",
+  "composeExtensions": [
+      {
+          "botId": "<<REGISTERED_BOT_ID. Register your bot at https://dev.botframework.com/bots/new>>",
+          "canUpdateConfiguration": true,
+          "commands": [
+              {
+                  "id": "searchCmd",
+                  "title": "Search",
+                  "description": "Search cities",
+                  "initialRun": true,
+                  "parameters": [
+                      {
+                          "name": "searchKeyword",
+                          "title": "Keywords",
+                          "description": "Enter your search keywords"
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "permissions": [
+      "identity",
+      "messageTeamMembers"
+  ],
+  "validDomains": []
+}
