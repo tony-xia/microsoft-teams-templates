@@ -8,5 +8,7 @@
   "tags": {
     "language": "C#",
     "type":"project"
-  }
+  },
+  "sourceName": "MicrosoftTeams.OutgoingWebhook",
+  "preferNameDirectory" : true
 }
