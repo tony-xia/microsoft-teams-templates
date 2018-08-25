@@ -12,7 +12,7 @@ namespace MicrosoftTeams.MessagingExtension.Controllers
     [ApiController]
     public class MessagingExtensionController : ControllerBase
     {
-        private static readonly string[] s_sampleCities = new string[] { "Shanghai", "ShenZhen", "Sydney", "Melbourne", "Tokyo", "Osaka", "KualaLumpur" };
+        private static readonly string[] s_sampleCities = new string[] { "Seattle", "Shanghai", "ShenZhen", "Sydney", "Melbourne", "Tokyo", "Osaka", "KualaLumpur" };
 
         [HttpPost]
         [Route("api/extension")]
