@@ -1,0 +1,46 @@
+{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v1.2/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.0",
+  "id": "ef07d51d-4dfe-1790-16f7-9f7fcc504406",
+  "version": "0.0.1",
+  "packageName": "net.azurewebsites.microsoftTeamsTab",
+  "developer": {
+    "name": "MicrosoftTeams.Tab",
+    "websiteUrl": "https://ce14fc36.ngrok.io",
+    "privacyUrl": "https://ce14fc36.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://ce14fc36.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "MicrosoftTeams.Tab",
+    "full": "MicrosoftTeams.Tab"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://ce14fc36.ngrok.io/msTeamsTabConfig.html",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "ce14fc36.ngrok.io"
+  ]
+}
