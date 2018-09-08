@@ -38,7 +38,7 @@ gulp.task('watch', function () {
 gulp.task('manifest', ['validate-manifest'], () => {
     // TODO: add version injection here
     gulp.src(manifestFiles)
-        .pipe(zip('MicrosoftTeams.Tab.zip'))
+        .pipe(zip('microsoftteamstab.zip'))
         .pipe(gulp.dest('package'));
 });
 

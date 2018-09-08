@@ -15,37 +15,38 @@ fs.readdirSync('node_modules')
         nodeModules[mod] = 'commonjs ' + mod;
     });
 
-var config = [{
-        entry: {
-            server: [
-                __dirname + '/src/app/server.ts'
-            ],
-        },
-        output: {
-            path: __dirname + '/dist',
-            filename: '[name].js',
-            devtoolModuleFilenameTemplate: debug ? '[absolute-resource-path]' : '[]'
-        },
-        externals: nodeModules,
-        devtool: 'source-map',
-        resolve: {
-            extensions: [".ts", ".tsx", ".js"],
-            alias: {}
-        },
-        target: 'node',
-        node: {
-            __dirname: false,
-            __filename: false,
-        },
-        module: {
-            loaders: [{
-                test: /\.tsx?$/,
-                exclude: [/lib/, /dist/],
-                loader: "ts-loader"
-            }]
-        },
-        plugins: []
-    },
+var config = [
+    //{
+    //     entry: {
+    //         server: [
+    //             __dirname + '/src/app/server.ts'
+    //         ],
+    //     },
+    //     output: {
+    //         path: __dirname + '/dist',
+    //         filename: '[name].js',
+    //         devtoolModuleFilenameTemplate: debug ? '[absolute-resource-path]' : '[]'
+    //     },
+    //     externals: nodeModules,
+    //     devtool: 'source-map',
+    //     resolve: {
+    //         extensions: [".ts", ".tsx", ".js"],
+    //         alias: {}
+    //     },
+    //     target: 'node',
+    //     node: {
+    //         __dirname: false,
+    //         __filename: false,
+    //     },
+    //     module: {
+    //         loaders: [{
+    //             test: /\.tsx?$/,
+    //             exclude: [/lib/, /dist/],
+    //             loader: "ts-loader"
+    //         }]
+    //     },
+    //     plugins: []
+    // },
     {
         entry: {
             client: [
@@ -56,7 +57,7 @@ var config = [{
             path: __dirname + '/dist/web/scripts',
             filename: '[name].js',
             libraryTarget: 'umd',
-            library: 'microsoftTeamsTab',
+            library: 'microsoftteamstab',
             publicPath: '/scripts/'
         },
         externals: {},
@@ -68,17 +69,17 @@ var config = [{
         target: 'web',
         module: {
             loaders: [{
-                    test: /\.tsx?$/,
-                    exclude: [/lib/, /dist/],
-                    loader: "ts-loader",
-                    options: {
-                        configFile: "tsconfig-client.json"
-                    }
-                },
-                {
-                    test: /\.(eot|svg|ttf|woff|woff2)$/,
-                    loader: 'file-loader?name=public/fonts/[name].[ext]'
+                test: /\.tsx?$/,
+                exclude: [/lib/, /dist/],
+                loader: "ts-loader",
+                options: {
+                    configFile: "tsconfig-client.json"
                 }
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=public/fonts/[name].[ext]'
+            }
             ]
         },
         plugins: []

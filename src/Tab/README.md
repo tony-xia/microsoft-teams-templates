@@ -1,4 +1,4 @@
-# MicrosoftTeams.Tab
+# microsoftteamstab
 
 Generate a Microsoft Teams application.
 
@@ -64,15 +64,15 @@ This will automatically deploy your files to Azure, download the npm pacakges, b
 
 1. Log into [the Azure Portal](https://portal.azure.com)
 2. Create a new *Resource Group* or use an existing one
-3. Create a new *Web App* and give it the name of your tab, the same you used when asked for URL in the Yeoman generator. In your case https://microsoftTeamsTab.azurewebsites.net.
+3. Create a new *Web App* and give it the name of your tab, the same you used when asked for URL in the Yeoman generator. In your case https://microsoftteamstab.azurewebsites.net.
 4. Go to the created Web App and configure *Deployment Credentials*. Not that this is only done once per Microsoft Azure Account.
 5. Go to *Deployment Options*
 6. Choose *Local Git Repository* as source and click *OK*
 7. In your tab folder initialize a Git repository using `git init`
 8. Build the solution using `gulp build` to make sure you don't have any errors
 9. Commit all your files using `git add -A && git commit -m "Initial commit"`
-10. Run the following command to set up the remote repository: `git remote add azure https://<username>@microsoftTeamsTab.scm.azurewebsites.net:443/microsoftTeamsTab.git`. You need to replace <username> with the name of the user you set up in _Deployment Credentials_. You can also copy the URL from *Options* in the Azure Web App.
+10. Run the following command to set up the remote repository: `git remote add azure https://<username>@microsoftteamstab.scm.azurewebsites.net:443/microsoftteamstab.git`. You need to replace <username> with the name of the user you set up in _Deployment Credentials_. You can also copy the URL from *Options* in the Azure Web App.
 11. To push your code use to Azure use the following command: `git push azure master`, you will be asked for your credentials the first time
-12. Wait until the deployment is completed and navigate to https://microsoftTeamsTab.azurewebsites.net/privacy.html to test that the web application is running
+12. Wait until the deployment is completed and navigate to https://microsoftteamstab.azurewebsites.net/privacy.html to test that the web application is running
 13. Done
 14. Repeat step 11 for every commit you do and want to deploy
