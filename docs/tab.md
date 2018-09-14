@@ -10,7 +10,7 @@ The following tools should be installed.
 ## Steps
 
 * Install ngrok from [https://ngrok.com/](https://ngrok.com/)
-* Run `ngrok.exe http 3007`, because our node project will listen on port 3007.
+* Run `ngrok.exe http 5000`, because our project will listen on port 5000.
 * Copy the ngrok url(https).
 ![ngrok](assets/tab_en_us/ngrok.png)
 
@@ -20,10 +20,9 @@ The following tools should be installed.
 * Compress files 'manifest.json' & 'icon-outline.png' & 'icon-color.png' into a file named manifest.zip. The zip file will be uploaded to Teams.
 ![manifest.zip](assets/tab_en_us/manifest_zip.png)
 
-* Run command to start the node server.
-    1. > npm install
-    2. > npm run build
-    3. > node .\dist\server.js
+* Run command to start the server.
+    1. > dotnet build
+    2. > dotnet run
 
 * Open Microsoft Teams, create a Tab.
     1. Navigate to 'Apps' tab in a certain team.
@@ -31,7 +30,7 @@ The following tools should be installed.
     3. Select manifest.zip and click Open.
     ![UploadACustomApp](assets/tab_en_us/upload_manifest_zip.png)
 
-* Click "MicrosoftTeams.Tab" app uploaded just now, And set it up for a channel.
+* Click "MSTeamsTab" app uploaded just now, And set it up for a certain channel.
 ![Tab](assets/tab_en_us/context_reactcomponent.png)
 
-* Run `dotnet new teamstab --name SampleApp` to generate the project.
+* Run `dotnet new teamstab` to generate the project.
