@@ -24,7 +24,7 @@ export interface ImsTeamsTabConfigProps extends ITeamsBaseComponentProps {
 /**
  * Implementation of MSTeams.Tab configuration page
  */
-export class msTeamsTabConfig  extends TeamsBaseComponent<ImsTeamsTabConfigProps, ImsTeamsTabConfigState> {
+export class msTeamsTabConfig extends TeamsBaseComponent<ImsTeamsTabConfigProps, ImsTeamsTabConfigState> {
 
     public componentWillMount() {
         this.updateTheme(this.getQueryVariable('theme'));
@@ -53,9 +53,6 @@ export class msTeamsTabConfig  extends TeamsBaseComponent<ImsTeamsTabConfigProps
                 });
                 saveEvent.notifySuccess();
             });
-
-        } else {
-            
         }
     }
 
@@ -91,7 +88,7 @@ export class msTeamsTabConfig  extends TeamsBaseComponent<ImsTeamsTabConfigProps
                                             label="Enter a vlue"
                                             errorLabel={!this.state.value ? "This value is required" : undefined}
                                             value={this.state.value}
-                                            onChange={(e) =>{
+                                            onChange={(e) => {
                                                 this.setState({
                                                     value: e.target.value
                                                 })
@@ -107,7 +104,7 @@ export class msTeamsTabConfig  extends TeamsBaseComponent<ImsTeamsTabConfigProps
                     );
                 }}>
                 </ConnectedComponent>
-            </TeamsComponentContext >
+            </TeamsComponentContext>
         );
     }
 }

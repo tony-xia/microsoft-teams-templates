@@ -3,12 +3,12 @@
   "manifestVersion": "1.0",
   "id": "50b1a6fa-545d-d085-063c-6277de17d09a",
   "version": "0.0.1",
-  "packageName": "5e2ba652.ngrok.io",
+  "packageName": "<<BASE_URI_DOMAIN>>",
   "developer": {
     "name": "MSTeams",
-    "websiteUrl": "https://5e2ba652.ngrok.io",
-    "privacyUrl": "https://5e2ba652.ngrok.io/privacy.html",
-    "termsOfUseUrl": "https://5e2ba652.ngrok.io/tou.html"
+    "websiteUrl": "https://<<BASE_URI_DOMAIN>>",
+    "privacyUrl": "https://<<BASE_URI_DOMAIN>>/privacy.html",
+    "termsOfUseUrl": "https://<<BASE_URI_DOMAIN>>/tou.html"
   },
   "name": {
     "short": "MSTeamsTab",
@@ -25,7 +25,7 @@
   "accentColor": "#D85028",
   "configurableTabs": [
     {
-      "configurationUrl": "https://5e2ba652.ngrok.io/msTeamsTabConfig.html",
+      "configurationUrl": "https://<<BASE_URI_DOMAIN>>/msTeamsTabConfig.html",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
@@ -41,6 +41,6 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "5e2ba652.ngrok.io"
+    "<<BASE_URI_DOMAIN>>"
   ]
 }

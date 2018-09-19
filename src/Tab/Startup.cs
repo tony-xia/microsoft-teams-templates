@@ -29,7 +29,7 @@ namespace website
 
             app.UseStaticFiles(new StaticFileOptions()
             {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"dist/web")),
+                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, @"dist/web")),
                 RequestPath = new PathString()
             });
         }

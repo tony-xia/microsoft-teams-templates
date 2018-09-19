@@ -16,37 +16,6 @@ fs.readdirSync('node_modules')
     });
 
 var config = [
-    //{
-    //     entry: {
-    //         server: [
-    //             __dirname + '/src/app/server.ts'
-    //         ],
-    //     },
-    //     output: {
-    //         path: __dirname + '/dist',
-    //         filename: '[name].js',
-    //         devtoolModuleFilenameTemplate: debug ? '[absolute-resource-path]' : '[]'
-    //     },
-    //     externals: nodeModules,
-    //     devtool: 'source-map',
-    //     resolve: {
-    //         extensions: [".ts", ".tsx", ".js"],
-    //         alias: {}
-    //     },
-    //     target: 'node',
-    //     node: {
-    //         __dirname: false,
-    //         __filename: false,
-    //     },
-    //     module: {
-    //         loaders: [{
-    //             test: /\.tsx?$/,
-    //             exclude: [/lib/, /dist/],
-    //             loader: "ts-loader"
-    //         }]
-    //     },
-    //     plugins: []
-    // },
     {
         entry: {
             client: [

@@ -10,7 +10,6 @@ import {
     Input,
     Surface
 } from 'msteams-ui-components-react';
-import { render } from 'react-dom';
 import { TeamsBaseComponent, ITeamsBaseComponentProps, ITeamsBaseComponentState } from './TeamsBaseComponent'
 
 export interface ImsTeamsTabRemoveState extends ITeamsBaseComponentState {
@@ -23,7 +22,7 @@ export interface ImsTeamsTabRemoveProps extends ITeamsBaseComponentProps {
 /**
  * Implementation of MSTeams.Tab remove page
  */
-export class msTeamsTabRemove  extends TeamsBaseComponent<ImsTeamsTabRemoveProps, ImsTeamsTabRemoveState> {
+export class msTeamsTabRemove extends TeamsBaseComponent<ImsTeamsTabRemoveProps, ImsTeamsTabRemoveState> {
 
     public componentWillMount() {
         this.updateTheme(this.getQueryVariable('theme'));
@@ -33,8 +32,6 @@ export class msTeamsTabRemove  extends TeamsBaseComponent<ImsTeamsTabRemoveProps
 
         if (this.inTeams()) {
             microsoftTeams.initialize();
-        } else {
-            
         }
     }
 
@@ -63,7 +60,7 @@ export class msTeamsTabRemove  extends TeamsBaseComponent<ImsTeamsTabRemoveProps
                                 </PanelHeader>
                                 <PanelBody>
                                     <div style={styles.section}>
-                                    You can just add stuff here if you want to clean up when removing the tab. For instance, if you have stored data in an external repository, you can delete or archive it here. If you don't need this remove page you can remove it.
+                                        You can just add stuff here if you want to clean up when removing the tab. For instance, if you have stored data in an external repository, you can delete or archive it here. If you don't need this remove page you can remove it.
                                     </div>
 
                                 </PanelBody>
@@ -74,7 +71,7 @@ export class msTeamsTabRemove  extends TeamsBaseComponent<ImsTeamsTabRemoveProps
                     );
                 }}>
                 </ConnectedComponent>
-            </TeamsComponentContext >
+            </TeamsComponentContext>
         );
     }
 }
