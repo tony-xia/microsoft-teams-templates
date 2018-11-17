@@ -1,0 +1,46 @@
+{
+  "$schema": "https://statics.teams.microsoft.com/sdk/v1.2/manifest/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.0",
+  "id": "50b1a6fa-545d-d085-063c-6277de17d09a",
+  "version": "0.0.1",
+  "packageName": "<<BASE_URI_DOMAIN>>",
+  "developer": {
+    "name": "MSTeams",
+    "websiteUrl": "https://<<BASE_URI_DOMAIN>>",
+    "privacyUrl": "https://<<BASE_URI_DOMAIN>>/privacy.html",
+    "termsOfUseUrl": "https://<<BASE_URI_DOMAIN>>/tou.html"
+  },
+  "name": {
+    "short": "MSTeamsTab",
+    "full": "Microsoft Teams Tab"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://<<BASE_URI_DOMAIN>>/msTeamsTabConfig.html",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "<<BASE_URI_DOMAIN>>"
+  ]
+}
