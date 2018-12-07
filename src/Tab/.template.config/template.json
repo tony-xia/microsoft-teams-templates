@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Tony Xia",
+  "classifications": [ "Teams", "Tabs" ],
+  "identity": "MicrosoftTeams.Tabs",
+  "name": "Microsoft Teams Tabs",
+  "shortName": "teamstabs",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "sourceName": "MicrosoftTeams.Tabs",
+  "preferNameDirectory" : true
+}

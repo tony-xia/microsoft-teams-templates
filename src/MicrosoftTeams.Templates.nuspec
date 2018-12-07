@@ -2,9 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>MicrosoftTeams.Templates</id>
-    <version>0.9.3</version>
+    <version>0.9.4</version>
     <description>
-      Creates Microsoft Teams apps.
+      Templates for Microsoft Teams apps.
+Install or update the template:  dotnet new -i MicrosoftTeams.Templates
+Develop an outgoing webhook: https://github.com/tony-xia/microsoft-teams-templates/blob/master/docs/webhook.md
+Develop a messaging extension: https://github.com/tony-xia/microsoft-teams-templates/blob/master/docs/messagingextension.md
     </description>
     <tags>Microsoft Teams Template</tags>
     <authors>Tony Xia</authors>
