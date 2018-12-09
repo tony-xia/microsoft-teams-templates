@@ -10,3 +10,4 @@
 
 * [Develop an outgoing webhook](docs/webhook.md)
 * [Develop a messaging extension](docs/messagingextension.md)
+* [Develop a tab app](docs/tab.md)
