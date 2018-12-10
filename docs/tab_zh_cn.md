@@ -22,6 +22,8 @@
 
   ![manifest.zip](assets/tab_en_us/manifest_zip.png)
 
+- 运行`dotnet new teamstabs`命令生成项目。
+
 - 运行以下命令.
 
   1. > dotnet build
@@ -36,5 +38,3 @@
 
 - 点击刚才上传的"MSTeamsTab"应用并且为需要的频道进行设置.
   ![Tab](assets/tab_en_us/context_reactcomponent.png)
-
-- 运行`dotnet new teamstab`命令生成项目.
