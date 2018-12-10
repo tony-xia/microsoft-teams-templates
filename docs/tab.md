@@ -21,6 +21,8 @@ The following tools should be installed.
 - Compress files 'manifest.json' & 'icon-outline.png' & 'icon-color.png' into a file named manifest.zip. The zip file will be uploaded to Teams.
   ![manifest.zip](assets/tab_en_us/manifest_zip.png)
 
+- Run `dotnet new teamstabs` to generate the project.
+
 - Run command to start the server.
 
   1. > dotnet build
@@ -35,5 +37,3 @@ The following tools should be installed.
 
 - Click "MSTeamsTab" app uploaded just now, And set it up for a certain channel.
   ![Tab](assets/tab_en_us/context_reactcomponent.png)
-
-- Run `dotnet new teamstab` to generate the project.
