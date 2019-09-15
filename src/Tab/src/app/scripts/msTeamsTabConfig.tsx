@@ -85,7 +85,7 @@ export class msTeamsTabConfig extends TeamsBaseComponent<ImsTeamsTabConfigProps,
                                             autoFocus
                                             style={styles.input}
                                             placeholder="Enter a value here"
-                                            label="Enter a vlue"
+                                            label="Enter a value"
                                             errorLabel={!this.state.value ? "This value is required" : undefined}
                                             value={this.state.value}
                                             onChange={(e) => {
