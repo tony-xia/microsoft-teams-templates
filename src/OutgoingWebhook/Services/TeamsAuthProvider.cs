@@ -79,7 +79,7 @@ namespace MicrosoftTeams.OutgoingWebhook.Services
             }
             catch (Exception ex)
             {
-                _logger.LogWarning(ex, "Exception occcured while verifying HMAC on the incoming request.");
+                _logger.LogWarning(ex, "Exception occured while verifying HMAC on the incoming request.");
                 return new TeamsAuthResponse(false, "Exception thrown while verifying MAC on incoming request.");
             }
         }

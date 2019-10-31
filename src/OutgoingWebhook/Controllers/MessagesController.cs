@@ -25,7 +25,7 @@ namespace MicrosoftTeams.OutgoingWebhook.Controllers
             {
                 return new Activity()
                 {
-                    Text = "You are not authorized to call into this end point."
+                    Text = "You are not authorized to call into this endpoint."
                 };
             }
 
