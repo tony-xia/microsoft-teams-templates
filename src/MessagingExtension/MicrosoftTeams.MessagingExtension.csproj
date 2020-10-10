@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Bot.Builder" Version="4.10.3" />
+    <PackageReference Include="Microsoft.Bot.Connector.Teams" Version="4.0.0-beta1" />
   </ItemGroup>
 
 </Project>
