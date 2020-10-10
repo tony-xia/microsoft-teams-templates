@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-* [dotnet SDK 2.1.0](https://www.microsoft.com/net/core) together with dotnet CLI
+* [dotnet SDK 3.1](https://dotnet.microsoft.com/download) together with dotnet CLI
 
 ## Using the template
 
