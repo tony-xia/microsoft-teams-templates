@@ -30,16 +30,16 @@
     "@types/express-session": "1.15.5",
     "@types/morgan": "1.7.35",
     "@types/request": "2.0.7",
-    "gulp": "3.9.1",
+    "gulp": "^4.0.2",
     "gulp-inject": "4.3.0",
     "gulp-zip": "4.0.0",
-    "nodemon": "1.12.1",
+    "nodemon": "^2.0.4",
     "plugin-error": "1.0.1",
     "run-sequence": "^2.2.1",
     "ts-loader": "3.1.1",
     "typescript": "2.6.1",
-    "webpack": "3.8.1",
-    "yargs": "10.0.3",
+    "webpack": "^5.0.0",
+    "yargs": "^16.0.3",
     "z-schema": "^3.19.1"
   }
 }
