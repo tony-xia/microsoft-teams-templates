@@ -23,7 +23,7 @@ public class MessagesController : ControllerBase
         var authResult = _teamsAuth.Validate(this.Request);
         if (!authResult.AuthSuccessful)
         {
-            return new Activity()
+            return new Activity
             {
                 Text = "You are not authorized to call into this endpoint."
             };
@@ -33,7 +33,7 @@ public class MessagesController : ControllerBase
         if (activity.Text.Contains("hero", StringComparison.InvariantCultureIgnoreCase))
         {
             var card = CreateSampleHeroCard();
-            attachment = new Attachment()
+            attachment = new Attachment
             {
                 ContentType = HeroCard.ContentType,
                 Content = card
@@ -42,7 +42,7 @@ public class MessagesController : ControllerBase
         else if (activity.Text.Contains("thumbnail", StringComparison.InvariantCultureIgnoreCase))
         {
             var card = CreateSampleThumbnailCard();
-            attachment = new Attachment()
+            attachment = new Attachment
             {
                 ContentType = ThumbnailCard.ContentType,
                 Content = card
@@ -51,13 +51,13 @@ public class MessagesController : ControllerBase
 
         if (attachment != null)
         {
-            return new Activity()
+            return new Activity
             {
                 Attachments = new List<Attachment>() { attachment }
             };
         }
 
-        return new Activity()
+        return new Activity
         {
             Text = "Try to type <b>hero</b> or <b>thumbnail</b>."
         };
@@ -65,21 +65,21 @@ public class MessagesController : ControllerBase
 
     private HeroCard CreateSampleHeroCard()
     {
-        return new HeroCard()
+        return new HeroCard
         {
             Title = "Superhero",
             Subtitle = "An incredible hero",
             Text = "Microsoft Teams",
-            Images = new List<CardImage>()
+            Images = new List<CardImage>
             {
-                new CardImage()
+                new CardImage
                 {
                     Url = "https://github.com/tony-xia/microsoft-teams-templates/raw/master/images/cbd_after_sunset.jpg"
                 }
             },
-            Buttons = new List<CardAction>()
+            Buttons = new List<CardAction>
             {
-                new CardAction()
+                new CardAction
                 {
                     Type = "openUrl",
                     Title = "Visit",
@@ -91,20 +91,20 @@ public class MessagesController : ControllerBase
 
     private ThumbnailCard CreateSampleThumbnailCard()
     {
-        return new ThumbnailCard()
+        return new ThumbnailCard
         {
             Title = "Teams Sample",
             Subtitle = "Outgoing Webhook sample",
-            Images = new List<CardImage>()
+            Images = new List<CardImage>
             {
-                new CardImage()
+                new CardImage
                 {
                     Url = "https://github.com/tony-xia/microsoft-teams-templates/raw/master/images/steak.jpg"
                 }
             },
-            Buttons = new List<CardAction>()
+            Buttons = new List<CardAction>
             {
-                new CardAction()
+                new CardAction
                 {
                     Type = "openUrl",
                     Title = "Visit",
